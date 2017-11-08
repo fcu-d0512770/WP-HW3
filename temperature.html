@@ -6,19 +6,19 @@
 	  <title>temprature transform</title>
 	  <script type = "text/javascript">
 	  
-	    var c; //c = 攝氏
+		var c; //c = 攝氏
 		var f; //f = 華式
 		var number1;//restore c;
 		c = window.prompt("please enter your 攝氏溫度");
 		number1 = parseFloat( c );
 		
 		f = transform(number1);//c transform to f
-	    document.writeln(
-		   "<h1>原攝氏溫度為" + number1 +"</h1>");
 		document.writeln(
-		   "<h1>轉換後的華式溫度為" + f + "</h1>");
+			"<h1>原攝氏溫度為" + number1 +"</h1>");
+		document.writeln(
+			"<h1>轉換後的華式溫度為" + f + "</h1>");
 		function transform( x ) {
-           return 9/5*x+32;
+			return 9/5*x+32;
         }			 
 	  </script>
 	</head><body></body>
